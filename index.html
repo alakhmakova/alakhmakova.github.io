@@ -1,208 +1,211 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="customElements.js" defer></script>
-    <title>CV Anastasiya Lakhmakova</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library · Catalog</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Comments -->
-        <aside>
-            <div class="header">
-                <div class="name">
-                    <img src="icons/computer.png" alt="Icon_computer">
-                    <p class="headline name">Anastasiya<br>Lakhmakova</p>
-                </div>
-                <p class="role">Systemutvecklare<br>med testinriktning</p>
-            </div>
-            <div class="content">
-                <div class="piece contacts">
-                    <hr>
-                    <div class="side-container-name">
-                        <i class="bi bi-envelope-fill" style="font-size: 18px;"></i>
-                        <p class="headline">Kontakt</p>
-                    </div>
-                    <hr>
-                        <div class="contact">
-                            <i class="bi bi-telephone"></i>
-                            <p>+46793539916</p>
-                        </div>
-                        <div class="contact">
-                            <i class="bi bi-envelope-at"></i>
-                            <p></p><a href="mailto:anastasiya.lakhmakova@gmail.com" target="_blank" title="Skicka ett mejl till mig">anastasiya.lakhmakova@gmail.com</a></p>
-                        </div>
-                        <div class="contact">
-                            <i class="bi bi-linkedin"></i>
-                            <p><a href="https://www.linkedin.com/in/anastasiya-lakhmakova/" target="_blank" title="Få mer information om mig via LinkedIn">https://www.linkedin.com/in/anastasiya-lakhmakova/</a></p>
-                        </div>
-                </div>
-                <div class="piece languages">
-                    <hr>
-                    <div class="side-container-name">
-                        <i class="bi bi-translate"></i>
-                        <p class="headline">Språk</p>
-                    </div>
-                    <hr>
-                    <div class="list">
-                        <ul>
-                            <li>Svenska</li>
-                            <li>Engelska</li>
-                            <li>Ryska (modersmål)</li>
-                          </ul>
-                        </div>
-                </div>
-                <div class="piece skills">
-                    <hr>
-                    <div class="side-container-name">
-                        <i class="bi bi-puzzle-fill"></i>
-                        <p class="headline">Teknisk kompetens</p>
-                    </div>
-                    <hr>
-                    <div class="list">
-                        <ul>
-                            <li>Backend-utveckling: Java, JDBC,<br>Spring Boot</li>
-                            <li>Databaser: SQL, MySQL, SQLight</li>
-                            <li>Webbutveckling: HTML, CSS, JavaScript</li>
-                            <li>Testning (funktionell, utforskande)</li>
-                            <li>DevOps verktyg: Docker, Jenkins</li>
-                          </ul>
-                        </div>
-                </div>
-                <div class="piece certifications">
-                    <hr>
-                    <div class="side-container-name">
-                        <i class="bi bi-patch-check-fill"></i>
-                        <p class="headline">Övriga utbildningar</p>
-                    </div>
-                    <hr>
-                        <div class="certification-description">
-                                <a href="https://www.it-academy.by/course/software-testing-engineer/st1-funktsionalnoe-testirovanie-po/" target="_blank" title="Kursinformation tillhandahålls på ryska">Utbildningscenter för programmering och högteknologi, Belarus:</a>
-                                <ul>
-                                <li>Funktionell mjukvarutestning</li>
-                            </ul>
-                        </div>
-                        <div class="certification-description">
-                                <a href="https://software-testing.ru/edu/" target="_blank" title="Kursinformation tillhandahålls på ryska">Software-Testing.ru:</a>
-                                <ul>
-                                <li>Javaprogrammering för testare</li>
-                                <li>Selenium WebDriver</li>
-                                <li>REST API Automation on Java</li>
-                            </ul>
-                        </div>
-                        <div class="certification-description">
-                                <a href="https://www.linkedin.com/in/anastasiya-lakhmakova/details/certifications/" target="_blank" title="Granska mina kurscertifikat">LinkedIn Learning:</a>
-                                <ul>
-                                <li>Postman Essential Training</li>
-                                <li>Programming Foundations:<br>Version Control with Git</li>
-                                <li>Java Exception Handling</li>
-                                <li>SQL Essential Training</li>
-                                <li>Software Testing Foundations:<br>Test Planning</li>
-                                <li>Software Testing Foundations:<br>Test Techniques</li>
-                                <li>Agile Foundations</li>
-                            </ul>
-                        </div>
-                </div>
-            </div>
-        </aside>
-        <main >
-                <div class="profile">
-                    <div class="main-container-name">
-                        <i class="bi bi-person-fill"></i>
-                        <p class="headline">Profil</p>
-                    </div>
-                    <hr>
-                    <div class="description">
-                        <vertical-line-with-circle-marker line-length="210"></vertical-line-with-circle-marker>
-                        <p style="margin-top: 0;">
-                            Motiverad, målfokuserad och lösningsorienterad student med erfarenhet av mjukvarutestning, letar efter en LIA-plats inom Java-utveckling från 2025-10-10 till 2025-12-26. Med hjälp av LIA söker jag möjlighet till ständig utveckling och lärande  genom samarbete med erfarna kollegor.<br><br>
+  <header class="app-header">
+    <div class="app-header-inner container">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <span>Library</span>
+      </div>
+      <nav class="nav">
+        <a class="active" href="index.html">Catalog</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
 
-                            Jag vill tillämpa och fördjupa mina kunskaper i Java och databasteknik i en verklig arbetsmiljö. Med min engagemang, noggrannhet, analytiska tänkande, förmåga och vilja att lära mig nya saker ser jag fram emot att bidra till att syftet med organisations verksamheten uppnås.<br><br>
+  <main class="container">
+    <section class="controls">
+      <h2 class="section-title">Find your next read</h2>
+      <div class="controls-grid">
+        <div class="field" style="grid-column: span 6;">
+          <label for="searchAll">Search</label>
+          <div class="input"><input id="searchAll" type="search" placeholder="Search by title or author"></div>
+        </div>
+        <div class="field" style="grid-column: span 3;">
+          <label for="filterTitle">Title</label>
+          <div class="input"><input id="filterTitle" type="text" placeholder="e.g., 1984"></div>
+        </div>
+        <div class="field" style="grid-column: span 3;">
+          <label for="filterAuthor">Author</label>
+          <div class="input"><input id="filterAuthor" type="text" placeholder="e.g., Orwell"></div>
+        </div>
+        <div class="field" style="grid-column: span 2;">
+          <label for="filterYear">Year</label>
+          <div class="input"><input id="filterYear" type="number" inputmode="numeric" min="0" placeholder="e.g., 1949"></div>
+        </div>
+        <div class="field" style="grid-column: span 4;">
+          <label>Status</label>
+          <div class="checkbox-row">
+            <label><input id="statusAvailable" type="checkbox" checked> <span>Available</span></label>
+            <label><input id="statusTaken" type="checkbox" checked> <span>Taken</span></label>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                            Jag är lyhörd, hjälpsam och flexibel, öppen för förändringar, har god samarbetsförmåga och tar ansvar. Längtar efter att bli en del av ett team där jag kan vara till nytta och växa professionellt.
-                        </p>
-                    </div>
-                </div>
-                <div class="education">
-                    <div class="main-container-name">
-                        <i class="bi bi-mortarboard-fill"></i>
-                        <p class="headline">Utbildning</p>
-                    </div>
-                    <hr>
-                    <div class="description">
-                        <vertical-line-with-circle-marker line-length="290"></vertical-line-with-circle-marker>
-                        <div class="education-description">
-                        <p class="profession">Systemutvecklare</p>
-                        <div class="one-row">
-                            <i class="organization">JENSEN Yrkeshögskola, Malmö</i>
-                            <p class="date">augusti 2024 – maj 2026</p>
-                        </div>
-                        <ul>
-                            <li>Grundläggande förståelse för OOP-koncept</li>
-                            <li>Design, utveckling och testning av Java-baserade applikationer</li>
-                            <li>Skrivning av kod i enlighet med bästa praxis såsom SOLID</li>
-                            <li>Felsökning, debugging och problemlösning av programvaruproblem</li>
-                            <li>Integrering av Java-applikationer med databaser</li>
-                            <li>Förståelse för grundläggande SQL och erfarenhet av relationsdatabaser</li>
-                            <li>Användning av versionshanteringssystem såsom Git</li>
-                            <li>Kunskaper i Java-ramverk såsom Spring Boot, Hibernate</li>
-                            <li>Kompetens inom webbutvecklingsteknik, inklusive HTML, CSS och JavaScript</li>
-                            <li>Följa programvaruutvecklingens livscykel inom Scrum-ramverket</li>
-                            <li>Projekt (E-handelsbutik)</li>
-                            <span><a href="https://github.com/alakhmakova/webshop" target="_blank" title="Granska mitt projekt för kursen 'Programmering med Java, fortsättning'" style= "color: #86c6a7;">https://github.com/alakhmakova/webshop</a></span>
-                          </ul>
-                    </div>
-                </div>
-                </div>
-                <div class="work-experience">
-                    <div class="main-container-name">
-                        <i class="bi bi-briefcase-fill"></i>
-                        <p class="headline">Arbetslivserfarenhet</p>
-                    </div>
-                    <hr>
-                    <div class="description">
-                        <vertical-line-with-circle-marker line-length="350"></vertical-line-with-circle-marker>
-                        <div class="work-experience-description">
-                        <div class="place-of-work">
-                        <p class="profession">Manager</p>
-                        <div class="one-row">
-                            <i class="organization">Ariel Pole Studio AB, Malmö</i>
-                            <p class="date">oktober 2023 – mars 2025</p>
-                        </div>
-                        <ul>
-                            <li>Administration av bokningssystem (Agendo)</li>
-                            <li>Underhåll av webbplatsen arielpolestudio.se</li>
-                            <li>Kundsupport</li>
-                            <li>Kommunikation med fitness instruktörer (personal)</li>
-                            <li>Problemlösning</li>
-                            <li>Schemaläggning</li>
-                            <li>Bokföring (fakturering, betalningar, löner)</li>
-                            <li>Rapportering till studioägarna</li>
-                          </ul>
-                    </div>
-                    <div class="place-of-work">
-                        <p class="profession">Mjukvarutestare</p>
-                        <div class="one-row">
-                            <i class="organization">Quality Lab</i>
-                            <p class="date">juli 2022 – oktober 2023</p>
-                        </div>
-                        <ul>
-                            <li>Genomförande av funktionella- och regressionstester</li>
-                            <li>Utveckling av testfall och checklistor</li>
-                            <li>Rapportering av buggar (Jira)</li>
-                            <li>Förbättringsförslag</li>
-                            <li>API-testning med Postman</li>
-                            <li>Samarbete med utvecklare och affärsanalytiker</li>
-                            <li>Utbildning av nya teammedlemmar</li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-                </div>
-        </main>
+    <section class="books-grid" id="booksGrid">
+      <article class="book-card" data-id="gatsby" data-title="The Great Gatsby" data-author="F. Scott Fitzgerald" data-year="1925" data-status="available">
+        <div class="cover">
+          <img class="ratio" src="https://picsum.photos/seed/gatsby/400/560" alt="The Great Gatsby cover">
+          <button class="favorite-button" aria-label="Add to favorites" title="Add to favorites">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 18.01 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54l-1.449 1.31z"/></svg>
+          </button>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">The Great Gatsby</h3>
+          <p class="book-meta">F. Scott Fitzgerald · 1925</p>
+          <div class="actions">
+            <span class="badge available">Available</span>
+            <button class="button primary take-button">Take</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" data-id="1984" data-title="1984" data-author="George Orwell" data-year="1949" data-status="available">
+        <div class="cover">
+          <img class="ratio" src="https://picsum.photos/seed/1984/400/560" alt="1984 cover">
+          <button class="favorite-button" aria-label="Add to favorites" title="Add to favorites">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 18.01 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54l-1.449 1.31z"/></svg>
+          </button>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">1984</h3>
+          <p class="book-meta">George Orwell · 1949</p>
+          <div class="actions">
+            <span class="badge available">Available</span>
+            <button class="button primary take-button">Take</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" data-id="mockingbird" data-title="To Kill a Mockingbird" data-author="Harper Lee" data-year="1960" data-status="taken">
+        <div class="cover">
+          <img class="ratio" src="https://picsum.photos/seed/mockingbird/400/560" alt="To Kill a Mockingbird cover">
+          <button class="favorite-button" aria-label="Add to favorites" title="Add to favorites">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 18.01 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54l-1.449 1.31z"/></svg>
+          </button>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">To Kill a Mockingbird</h3>
+          <p class="book-meta">Harper Lee · 1960</p>
+          <div class="actions">
+            <span class="badge taken">Taken</span>
+            <button class="button gray take-button">Taken</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" data-id="bravenew" data-title="Brave New World" data-author="Aldous Huxley" data-year="1932" data-status="available">
+        <div class="cover">
+          <img class="ratio" src="https://picsum.photos/seed/bravenew/400/560" alt="Brave New World cover">
+          <button class="favorite-button" aria-label="Add to favorites" title="Add to favorites">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 18.01 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54l-1.449 1.31z"/></svg>
+          </button>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Brave New World</h3>
+          <p class="book-meta">Aldous Huxley · 1932</p>
+          <div class="actions">
+            <span class="badge available">Available</span>
+            <button class="button primary take-button">Take</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" data-id="catcher" data-title="The Catcher in the Rye" data-author="J. D. Salinger" data-year="1951" data-status="available">
+        <div class="cover">
+          <img class="ratio" src="https://picsum.photos/seed/catcher/400/560" alt="The Catcher in the Rye cover">
+          <button class="favorite-button" aria-label="Add to favorites" title="Add to favorites">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 18.01 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54l-1.449 1.31z"/></svg>
+          </button>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">The Catcher in the Rye</h3>
+          <p class="book-meta">J. D. Salinger · 1951</p>
+          <div class="actions">
+            <span class="badge available">Available</span>
+            <button class="button primary take-button">Take</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" data-id="mobydick" data-title="Moby Dick" data-author="Herman Melville" data-year="1851" data-status="taken">
+        <div class="cover">
+          <img class="ratio" src="https://picsum.photos/seed/mobydick/400/560" alt="Moby Dick cover">
+          <button class="favorite-button" aria-label="Add to favorites" title="Add to favorites">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 18.01 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54l-1.449 1.31z"/></svg>
+          </button>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Moby Dick</h3>
+          <p class="book-meta">Herman Melville · 1851</p>
+          <div class="actions">
+            <span class="badge taken">Taken</span>
+            <button class="button gray take-button">Taken</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" data-id="pride" data-title="Pride and Prejudice" data-author="Jane Austen" data-year="1813" data-status="available">
+        <div class="cover">
+          <img class="ratio" src="https://picsum.photos/seed/pride/400/560" alt="Pride and Prejudice cover">
+          <button class="favorite-button" aria-label="Add to favorites" title="Add to favorites">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 18.01 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54l-1.449 1.31z"/></svg>
+          </button>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Pride and Prejudice</h3>
+          <p class="book-meta">Jane Austen · 1813</p>
+          <div class="actions">
+            <span class="badge available">Available</span>
+            <button class="button primary take-button">Take</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" data-id="hobbit" data-title="The Hobbit" data-author="J. R. R. Tolkien" data-year="1937" data-status="available">
+        <div class="cover">
+          <img class="ratio" src="https://picsum.photos/seed/hobbit/400/560" alt="The Hobbit cover">
+          <button class="favorite-button" aria-label="Add to favorites" title="Add to favorites">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 18.01 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54l-1.449 1.31z"/></svg>
+          </button>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">The Hobbit</h3>
+          <p class="book-meta">J. R. R. Tolkien · 1937</p>
+          <div class="actions">
+            <span class="badge available">Available</span>
+            <button class="button primary take-button">Take</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="book-card" data-id="gatsby2" data-title="The Great Gatsby (2nd Ed.)" data-author="F. Scott Fitzgerald" data-year="1925" data-status="available">
+        <div class="cover">
+          <img class="ratio" src="https://picsum.photos/seed/gatsby2/400/560" alt="The Great Gatsby (2nd Ed.) cover">
+          <button class="favorite-button" aria-label="Add to favorites" title="Add to favorites">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6.01 3.99 4 6.5 4c1.74 0 3.41.81 4.5 2.09C12.09 4.81 13.76 4 15.5 4 18.01 4 20 6.01 20 8.5c0 3.78-3.4 6.86-8.55 11.54l-1.449 1.31z"/></svg>
+          </button>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">The Great Gatsby (2nd Ed.)</h3>
+          <p class="book-meta">F. Scott Fitzgerald · 1925</p>
+          <div class="actions">
+            <span class="badge available">Available</span>
+            <button class="button primary take-button">Take</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library · Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header-inner container">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <span>Library</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Catalog</a>
+                  <a class="active" href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" style="margin-bottom: 18px;">
+      <div class="card-body">
+        <h2 class="section-title">User details</h2>
+        <div class="form-grid">
+          <div class="field" style="grid-column: span 6;">
+            <label for="firstName">First name</label>
+            <div class="input"><input id="firstName" type="text" placeholder="First name" value="John"></div>
+          </div>
+          <div class="field" style="grid-column: span 6;">
+            <label for="lastName">Last name</label>
+            <div class="input"><input id="lastName" type="text" placeholder="Last name" value="Doe"></div>
+          </div>
+          <div class="field" style="grid-column: span 6;">
+            <label for="email">Email</label>
+            <div class="input"><input id="email" type="email" placeholder="name@example.com" value="john.doe@example.com"></div>
+          </div>
+          <div class="field" style="grid-column: span 6;">
+            <label for="password">Password</label>
+            <div class="input"><input id="password" type="password" value="password123"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-bottom: 18px;">
+      <div class="card-body">
+        <h2 class="section-title">Favorites</h2>
+        <div id="favoritesList" class="book-list"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-body">
+        <h2 class="section-title">Borrowed</h2>
+        <div id="borrowedList" class="book-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    window.BOOKS = [
+      { id: 'gatsby', title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', year: '1925', cover: 'https://picsum.photos/seed/gatsby/400/560' },
+      { id: '1984', title: '1984', author: 'George Orwell', year: '1949', cover: 'https://picsum.photos/seed/1984/400/560' },
+      { id: 'mockingbird', title: 'To Kill a Mockingbird', author: 'Harper Lee', year: '1960', cover: 'https://picsum.photos/seed/mockingbird/400/560' },
+      { id: 'bravenew', title: 'Brave New World', author: 'Aldous Huxley', year: '1932', cover: 'https://picsum.photos/seed/bravenew/400/560' },
+      { id: 'catcher', title: 'The Catcher in the Rye', author: 'J. D. Salinger', year: '1951', cover: 'https://picsum.photos/seed/catcher/400/560' },
+      { id: 'mobydick', title: 'Moby Dick', author: 'Herman Melville', year: '1851', cover: 'https://picsum.photos/seed/mobydick/400/560' },
+      { id: 'pride', title: 'Pride and Prejudice', author: 'Jane Austen', year: '1813', cover: 'https://picsum.photos/seed/pride/400/560' },
+      { id: 'hobbit', title: 'The Hobbit', author: 'J. R. R. Tolkien', year: '1937', cover: 'https://picsum.photos/seed/hobbit/400/560' },
+      { id: 'gatsby2', title: 'The Great Gatsby (2nd Ed.)', author: 'F. Scott Fitzgerald', year: '1925', cover: 'https://picsum.photos/seed/gatsby2/400/560' }
+    ];
+  </script>
+  <script src="profile.js" defer></script>
+</body>
+</html>
