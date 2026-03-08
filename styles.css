@@ -19,7 +19,7 @@ body {
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: flex-start; 
     background: rgb(226, 225, 225); 
     width: 340px; 
     min-height: 100%;
