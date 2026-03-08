@@ -7,12 +7,13 @@ body {
     align-items: stretch; 
     justify-content: space-between; /* Center the content horizontally */
     width: 810px;
-    height: 1145px; 
+    min-height: 1145px;
+    height: auto;
     font-family: "Montserrat", sans-serif;
     font-size: 12px; /* Set the base font size */
     color: rgb(99, 100, 102);
     line-height: 1.2; /* Reduce line spacing */
-    
+    overflow-wrap: break-word;
 }
 /*Side part of the CV which contains name of the candidate, role to apply, contact info, languages, skills, certifications*/
 aside {
@@ -21,7 +22,8 @@ aside {
     justify-content: space-between; 
     background: rgb(226, 225, 225); 
     width: 340px; 
-    height: 1145px;
+    min-height: 100%;
+    height: auto;
     padding: 0; 
     margin: 0;
 }
@@ -59,11 +61,12 @@ aside {
     /*margin: 0;
     padding-top: 20px;
     padding-left: 20px;*/
-    height: 940px;
+    height: auto;
     display: flex;
     flex-direction: column;  
     justify-content: space-around; 
     align-items: center; 
+    gap: 8px;
 }
 .content hr {
     margin: 0;
@@ -105,7 +108,8 @@ aside {
 /*Main part of the CV which contains Profile info, education, work experience*/
 main {
     display: flex;
-    height: 1145px;
+    min-height: 100%;
+    height: auto;
     width: 460px; 
     flex-direction: column;  
     justify-content: space-between; 
@@ -160,9 +164,10 @@ main hr {
 
   .work-experience-description {
     display: flex;
-    height: 363px;
+    height: auto;
     flex-direction: column;  
-    justify-content: space-evenly;  
+    justify-content: flex-start;
+    gap: 12px;
 }
 a {
     color: rgb(99, 100, 102); /* Set the color of links */
